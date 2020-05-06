@@ -5,9 +5,9 @@ import './form-input.styless.scss';
 const FormInput = ({ handleChange, label, ...otherProps }) => (
     <div className='group'>
       <input className='form-input' onChange={handleChange} {...otherProps} />
-        {
-            label ?
-           ( <label className={`${
+        {label ? (
+             <label 
+               className={`${
                otherProps.value.legnth ? 'shrink' : ''
             } form-input-label`}
             >
