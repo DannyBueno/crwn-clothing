@@ -11,3 +11,15 @@ export const addItem = item => ({
     type: CartActionTypes.ADD_ITEM,
     payload: item 
 });
+
+//Remove item from checkout page with arrows  
+export const removeItem = item => ({
+    type: CartActionTypes.REMOVE_ITEM,
+    payload: item
+});
+
+//clear from cart action
+export const clearItemFromCart = item => ({
+    type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+    payload: item
+});
